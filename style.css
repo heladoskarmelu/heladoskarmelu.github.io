@@ -125,10 +125,14 @@ color: #fff;
 
 
 
-
-
 /* Fuentes */
 
-.Fuente{
-    
+.fuenteC {
+    /* Fuente cursiva */
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.fuenteO{
+    /* Fuente Oficial */
+    font-family: 'KoHo', sans-serif;
 }
