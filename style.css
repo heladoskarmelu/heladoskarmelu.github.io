@@ -25,12 +25,14 @@ body {
     text-decoration: none !important;
 }
 .stripes{
-    position: absolute;
-    top: 0;
-    width: 100%;
+     
+     /* position: absolute;
+    top: 0;  */
+    /* width: 100%; */
     max-width: 64px;
     margin-left: 40px;
-    margin-left: 5vh;
+    margin-left: 5vh; 
+
 }
 .navbar-collapse {
     max-width: 880px;
@@ -63,11 +65,11 @@ h1{
    
 }
 
-@media (max-width: 991px){
+/* @media (max-width: 991px){
 .stripes {
     display: none;
 }
-}
+} */
 
 /* @media (max-width: 768px){
     .tarjeta-ind {
@@ -119,4 +121,14 @@ h1{
 font-weight: 300;
 text-align: center;
 color: #fff;
+}
+
+
+
+
+
+/* Fuentes */
+
+.Fuente{
+    
 }
