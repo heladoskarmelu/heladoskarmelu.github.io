@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Karmelu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styles/menuStyle.css">
+  <link rel="icon" type="image/x-icon" href="/images/FavIcon.svg">
+
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="filtroMenu('all')">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #01adf3">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- <div class="float-right position-absolute top-0 stripes">
+        
+      </div> -->
+      <img height="50px" src="../images/rtYgyKOSpqhbn2NPjpv8_iw0eTPYdQ9l26Y6L.jpg" class="d-lg-none float-right " />
+
+
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul id="menu-header-left" class="navbar-nav m-auto text-center">
+          <li>
+            <a href="../index.html" aria-current="page" class="nav-link font-weight-bold link fuenteO">Inicio</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link font-weight-bold link fuenteO">Menú</a>
+          </li>
+        </ul>
+        <a href="#" class="custom-logo-link d-none d-lg-block " rel="home" aria-current="page"><img height="50px"
+            src="../images/rtYgyKOSpqhbn2NPjpv8_iw0eTPYdQ9l26Y6L.jpg" /></a>
+
+        <ul id="menu-header-right" class="navbar-nav m-auto text-center">
+          <li>
+            <a href="#" class="nav-link font-weight-bold link fuenteO">Contáctanos</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link font-weight-bold link fuenteO">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <!-- ----------------------------------------------------------------------------------- -->
+   <!-- ----------------------------------------------------------------------------------- -->
+   <!-- Plantilla https://codepen.io/jorgesanes10/pen/QdMEXr -->
+   <!-- Se ha editado añadiéndole algunas propiedas de estilo mediante boostrap 5 -->
+   <!-- ------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------- -->
+
+
+       
+    
+
+
+    <div class="row tarjetasMenu justify-content-around align-items-center ">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  
+  <a onclick="filtroMenu('agua')" href="#" class="card agua ">
+    <div class="overlay"></div>
+    <div class="circle">
+      <img src="../images/icons8_water_64px.png" alt="" width="66px" height="77px">
+
+    </div>
+    <p>En agua</p>
+  </a>
+
+
+  <a onclick="filtroMenu('leche')" href="#" class="card leche">
+    <div class="overlay"></div>
+    <div class="circle">
+      <img src="../images/icons8_Milk_Bottle_64px.png" alt="" width="66px" height="77px">
+    
+    </div>
+    <p>En leche</p>
+  </a>
+
+
+  <a onclick="filtroMenu('stevia')" href="#" class="card stevia">
+    <div class="overlay"></div>
+    <div class="circle">
+      <img src="../images/icons8_leaf_64px.png" alt="" width="66px" height="77px">
+
+    </div>
+    <p>Con Stevia</p>
+  </a>
+
+
+  <a onclick="filtroMenu('premium')" href="#" class="card premium">
+    <div class="overlay"></div>
+    <div class="circle">
+      <img src="../images/icons8_medal_64px_1.png" alt="" width="66px" height="77px">
+
+    </div>
+    <p>Premium</p>
+  </a>
+
+  <a onclick="filtroMenu('all')" href="#" class="card todo">
+    <div class="overlay"></div>
+    <div class="circle">
+      <img src="../images/icons8_Ice_Pop_64px.png" alt="" width="66px" height="77px">
+
+    </div>
+    <p>Todos</p>
+  </a>
+
+</div>
+
+
+   
+<div id="todo" align="center">
+  <br><br>
+
+  <div class="agua">agua</div>
+  <div class="agua">agua</div>
+  <div class="agua">agua</div>
+  <div class="agua">agua</div>
+  <div class="agua">agua</div>
+
+  <div class="leche">leche</div>
+  <div class="leche">leche</div>
+  <div class="leche">leche</div>
+  <div class="leche">leche</div>
+  <div class="leche">leche</div>
+
+
+  <div class="stevia">stevia</div>
+  <div class="stevia">stevia</div>
+  <div class="stevia">stevia</div>
+  <div class="stevia">stevia</div>
+  <div class="stevia">stevia</div>
+
+  <div class="premium">premium</div>
+  <div class="premium">premium</div>
+  <div class="premium">premium</div>
+  <div class="premium">premium</div>
+  <div class="premium">premium</div>
+
+
+  <script src="../script.js">   </script>
+</body>
+
+
+</html>
