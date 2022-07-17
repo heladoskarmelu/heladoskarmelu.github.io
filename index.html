@@ -34,7 +34,7 @@
 
 
 
-<body style="background-color: #212121">
+<body style="background-color: #fff">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #01adf3">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
@@ -71,10 +71,12 @@
       </div>
     </nav>
   </header>
-
+  <div class="containerafternav">
   <main>
     <br />
     <!-- CARROUSEL -->
+
+    <div class="carrusel1">
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -82,7 +84,7 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner rounded-3">
         <div class="carousel-item active" data-bs-interval="10000">
           <img src="./images/carrusel1.jpg" class="d-block w-100" alt="..." />
         </div>
@@ -102,25 +104,23 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+  </div>
     <!-- Producto Ateniense -->
-    <section class="row mt-4 p-3 " style="background-color: #01adf3;">
-      <div class="col-12 col-md-6 mt-4 mb-4 marca-ateniense p-0">
-        <img src="./images/Atenas.svg" width="60%" class="position-relative top-0 start-50 translate-middle-x">
-      </div>
-      <article class="col-12 col-md-6 row text-center align-items-center">
-        <div class="texto-patenas fuenteC">
-          <p class="patenas"> Nuestra línea de Paletas Frutales está dirigida principalmente al sector Gastronómico, con los que trabajamos de la mano, un mercadeo colaborativo en pro del posicionamiento del producto y de la exposición en redes sociales de ambas partes. </p>
+    <section class="row mt-4 p-3 justify-content-around align-items-center fuenteC" >
+
+        <div class="col-xs-10 col-md-6 rounded-3" style="text-align: center;">
+          <p class="patenas "> Nuestra línea de Paletas Frutales está dirigida principalmente al sector Gastronómico, con los que trabajamos de la mano, un mercadeo colaborativo en pro del posicionamiento del producto y de la exposición en redes sociales de ambas partes. </p>
 
           <p class="patenas">Como familia, creemos en la lealtad y la gratitud como pilares de nuestro camino, por lo que la oferta de este producto con nuestra marca, está sujeto a exclusividad perimetral para los primeros locales por zona que gusten ofrecerlo. </p>
             
-          <p>Nuestra marca es orgullosamente 100% costarricense, disfrutamos la sencillez de las pequeñas cosas y los detalles. Nos inspiramos en los colores y la belleza de nuestro país y nos encanta viajar buscando constantemente nuevos lugares para mostrar nuestros productos.</p>
+          <p class="patenas">Nuestra marca es orgullosamente 100% costarricense, disfrutamos la sencillez de las pequeñas cosas y los detalles. Nos inspiramos en los colores y la belleza de nuestro país y nos encanta viajar buscando constantemente nuevos lugares para mostrar nuestros productos.</p>
           
         </div>
-      </article>
 
-
-
+        <div class="col-xs-10 col-md-3" style="background-color: #01adf3; border-radius: 250px;">
+          <img src="./images/Atenas.svg" width="60%" width="60%" class="position-relative top-0 start-50 translate-middle-x" >
+        </div>
+      
     </section>
 
     <section class="tarjetas-info">
@@ -152,12 +152,14 @@
       </div>
     </section>
   </main>
+</div>
 
   <div class="my-5">
     <!-- Footer -->
-    <footer class="text-center text-white" style="background-color: #01adf3">
+    <footer class="text-center text-white" style="background: #40c1dd;">
       <!-- Grid container -->
-      <div class="container">
+      <div class="bg-footer" style="background: url('./images/fondo-footer.png') repeat-x bottom;">
+      <div class="container" >
         <!-- Section: Links -->
         <section class="mt-5">
           <!-- Grid row-->
@@ -247,6 +249,7 @@
         HELADOS ARTESANALES KARMELÚ ® TODOS LOS DERECHOS RESERVADOS ©
       </div>
       <!-- Copyright -->
+    </div>
     </footer>
     <!-- Footer -->
   </div>
