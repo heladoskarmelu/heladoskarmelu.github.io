@@ -7,6 +7,14 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
 }
 
+nav{
+    background-color: #01adf3
+}
+
+footer{
+    background: #01adf3;
+}
+
 .containerafternav{
     padding: 5px;
 }
@@ -125,6 +133,10 @@ body {
 }
 
 
+footer .bg-footer{
+    background: url('./images/fondo-footer.png') repeat-x bottom;
+}
+
 
 /* Fuentes */
 
@@ -135,9 +147,34 @@ body {
 
 .fuenteO {
     /* Fuente Oficial */
-    /* font-family: 'KoHo', sans-serif; */
-    font-family: 'Comfortaa', cursive;
+    font-family: 'KoHo', sans-serif;
 }
 .patenas{
     color: black;
+}
+
+
+
+
+/* scroll bar */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #01adf3 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+    height: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #01adf3;
+    border-radius: 10px;
+    border: 03px solid #fff;
 }
