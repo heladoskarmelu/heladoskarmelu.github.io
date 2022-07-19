@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #212121;
+    background-color: #fff;
 }
   
   .tarjetasMenu{
@@ -10,28 +10,28 @@ body{
     margin: 50px 0;
     font-family: "Open Sans";
   }
-  .agua {
+  .aguaa {
     --bg-color: #01adf3;
     --bg-color-light: rgb(139, 210, 238);
     --text-color-hover: #4C5656;
     --box-shadow-color: rgba(255, 215, 97, 0.207);
   }
   
-  .leche {
-    --bg-color: rgb(211, 69, 152);
-    --bg-color-light: rgb(202, 140, 176);
+  .lechee {
+    --bg-color: #f78a9f;
+    --bg-color-light: #ee9faf;
     --text-color-hover: #4C5656;
     --box-shadow-color: rgba(184, 249, 211, 0.48);
   }
   
-  .stevia {
+  .steviaa {
     --bg-color: rgb(106,189,69);
     --bg-color-light:  rgb(137, 183, 117);
     --text-color-hover: #fff;
     --box-shadow-color: rgba(206, 178, 252, 0.48);
   }
   
-  .premium{
+  .premiumm{
     --bg-color: rgb(231,150,34);
     --bg-color-light: rgb(212, 179, 132);
     --text-color-hover: #4C5656;
@@ -142,7 +142,57 @@ body{
     transition: transform 0.3s ease-out;
   }
 
-  #todo .agua {width:120px;height:160px;margin:4px 2px;padding:4px;display:none;background:#01adf3}
+  /* #todo .agua {width:120px;height:160px;margin:4px 2px;padding:4px;display:none;background:#01adf3}
   #todo .leche {width:120px;height:160px;margin:4px 2px;padding:4px;display:none;background:rgb(211, 69, 152)}
   #todo .stevia {width:120px;height:160px;margin:4px 2px;padding:4px;display:none;background:rgb(106,189,69)}
-  #todo .premium {width:120px;height:160px;margin:4px 2px;padding:4px;display:none;background:rgb(231,150,34)}
+  #todo .premium {width:120px;height:160px;margin:4px 2px;padding:4px;display:none;background:rgb(231,150,34)} */
+
+
+
+
+
+
+
+  /* .root {
+    width: 49rem;
+    padding: 1rem;
+} */
+
+
+/* .menus {
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+} */
+.box {
+  margin: 0.5rem;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+  transition: transform 0.2s;
+}
+.box :hover {
+  transform: scale(1.1);
+}
+.box a {
+  text-decoration: none;
+}
+.box-img {
+  display: block;
+  margin: 20px auto;
+
+  width: 80%;
+}
+
+.box-text {
+  text-align: center;
+  color: #08c;
+  border-top: 1px solid #eee;
+  font-weight: bold;
+  padding: 0.7rem 0;
+}
