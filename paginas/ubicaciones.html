@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karmelú ® - Menú</title>
+  <title>Karmelú ® - Spots</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
@@ -25,7 +25,7 @@
 
 </head>
 
-<body onload="filtroMenu('all')">
+<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #01adf3">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
@@ -45,7 +45,7 @@
             <a href="../index.html" aria-current="page" class="nav-link font-weight-bold link fuenteO">Inicio</a>
           </li>
           <li>
-            <a href="./menu.html" class="nav-link font-weight-bold link fuenteO">Menú</a>
+            <a href="#" class="nav-link font-weight-bold link fuenteO">Menú</a>
           </li>
         </ul>
         <a href="#" class="custom-logo-link d-none d-lg-block " rel="home" aria-current="page"><img height="50px"
@@ -64,153 +64,15 @@
   </header>
 
 
-
-
-  <!-- ----------------------------------------------------------------------------------- -->
-  <!-- ----------------------------------------------------------------------------------- -->
-  <!-- Plantilla https://codepen.io/jorgesanes10/pen/QdMEXr -->
-  <!-- Se ha editado añadiéndole algunas propiedas de estilo mediante boostrap 5 -->
-  <!-- ------------------------------------------------------------------------------------- -->
-  <!-- ----------------------------------------------------------------------------------- -->
+  <section class="m-5 ">
+    <div style="height: 900px;" id="map"></div>
+  </section>
 
 
 
 
 
 
-  <div class="row tarjetasMenu justify-content-around align-items-center ">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-    <a onclick="filtroMenu('agua box col-xs-6 col-sm-2')" href="#" class="card aguaa ">
-      <div class="overlay"></div>
-      <div class="circle">
-        <img src="../images/icons8_water_64px.png" alt="" width="66px" height="77px">
-
-      </div>
-      <p>En agua</p>
-    </a>
-
-
-    <a onclick="filtroMenu('leche box col-xs-6 col-sm-2')" href="#" class="card lechee">
-      <div class="overlay"></div>
-      <div class="circle">
-        <img src="../images/icons8_Milk_Bottle_64px.png" alt="" width="66px" height="77px">
-
-      </div>
-      <p>En leche</p>
-    </a>
-
-
-    <a onclick="filtroMenu('stevia box col-xs-6 col-sm-2')" href="#" class="card steviaa">
-      <div class="overlay"></div>
-      <div class="circle">
-        <img src="../images/icons8_leaf_64px.png" alt="" width="66px" height="77px">
-
-      </div>
-      <p>Con Stevia</p>
-    </a>
-
-
-    <a onclick="filtroMenu('premium box col-xs-6 col-sm-2')" href="#" class="card premiumm">
-      <div class="overlay"></div>
-      <div class="circle">
-        <img src="../images/icons8_medal_64px_1.png" alt="" width="66px" height="77px">
-
-      </div>
-      <p>Premium</p>
-    </a>
-
-    <a onclick="filtroMenu('all')" href="#" class="card todo">
-      <div class="overlay"></div>
-      <div class="circle">
-        <img src="../images/icons8_Ice_Pop_64px.png" alt="" width="66px" height="77px">
-
-      </div>
-      <p>Todos</p>
-    </a>
-
-  </div>
-
-
-
-  <!-- <div id="todo" align="center">
-  <br><br>
-
-  <div class="agua">agua</div>
-  <div class="agua">agua</div>
-  <div class="agua">agua</div>
-  <div class="agua">agua</div>
-  <div class="agua">agua</div>
-
-  <div class="leche">leche</div>
-  <div class="leche">leche</div>
-  <div class="leche">leche</div>
-  <div class="leche">leche</div>
-  <div class="leche">leche</div>
-
-
-  <div class="stevia">stevia</div>
-  <div class="stevia">stevia</div>
-  <div class="stevia">stevia</div>
-  <div class="stevia">stevia</div>
-  <div class="stevia">stevia</div>
-
-  <div class="premium">
-    <img src="../images/heladosPremium/m&mPremium.png" alt="" style="width: 100%;">
-  </div>
-  <div class="premium">premium</div>
-  <div class="premium">premium</div>
-  <div class="premium">premium</div>
-  <div class="premium">premium</div>
-</div> -->
-
-
-  <div id="todo" class="">
-    <h1>Menus</h1>
-    <ul class="menus row justify-content-center align-items-center">
-      <li class="premium box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/helado.svg">
-          <div class="box-text">Churchill</div>
-        </a></li>
-      <li class="premium box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/mnms.svg">
-          <div class="box-text">M&M´S</div>
-        </a></li>
-      <li class="agua box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/naranjapina.svg">
-          <div class="box-text">Naranja-Piña</div>
-        </a></li>
-      <li class="agua box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/kiwi.svg">
-          <div class="box-text">Mango-kiwi</div>
-        </a></li>
-      <li class="agua box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/morafresa.svg">
-          <div class="box-text">Mora-Fresa</div>
-        </a></li>
-      <li class="leche box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/oreo.svg">
-          <div class="box-text">Galleta Oreo</div>
-        </a></li>
-      <li class="leche box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/pinacolada.svg" >
-          <div class="box-text">Piña Colada</div>
-        </a></li>
-      <li class="leche box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/capuchino.svg">
-          <div class="box-text">Capuccino</div>
-        </a></li>
-      <li class="stevia box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/mangomaracuya.svg">
-          <div class="box-text">Mango-Maracuyá</div>
-        </a></li>
-      <li class="stevia box col-xs-6 col-sm-2"><a href="#"><img class="box-img"
-            src="../images/heladosPremium/cocopina.svg">
-          <div class="box-text">Coco-Piña</div>
-        </a></li>
-      
-    </ul>
-  </div>
 
   <div class="my-5 mb-0">
     <!-- Footer -->
@@ -313,10 +175,17 @@
     <!-- Footer -->
   </div>
 
-  <script src="../script.js">   </script>
+  <!-- Scripts para importar Maps -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGCGsLi__9I5JVYpubUsejKmA2zD8v4Ps&callback=initMap" defer></script> 
+  
+  <script src="../Scripts/ScriptMap.JS"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+  </script>
+
 </body>
 
 
