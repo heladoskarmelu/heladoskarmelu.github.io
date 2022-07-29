@@ -105,7 +105,8 @@ footer{
 }
 
 .tarjeta-ind img {
-    width: 50%;
+    width: 100px;
+    height: 250px;
 }
 
 .tarjeta-ind h3 {
