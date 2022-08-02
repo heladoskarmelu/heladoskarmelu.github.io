@@ -2,10 +2,28 @@
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
+    
   }
   
   /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
   function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
+
   }
+
+  function filtroMenu(c) {
+    var x = document.getElementById("todo");
+    var y = x.querySelectorAll("li");
+    // console.log(c);
+    // console.log(y);
+    var i, c;
+    for (i = 0; i < y.length; i++) {
+        if (y[i].className == c || c == "all") {
+            y[i].style.display = "inline-block";
+        } else {
+            y[i].style.display = "none";
+        }
+    }
+    closeNav();
+}
