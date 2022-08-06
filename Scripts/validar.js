@@ -9,6 +9,8 @@ function validarFormulario(){
         correo=$('#correo').val(),
         asunto=$('#asunto').val(),
         mensaje=$('#mensaje').val();
+        fechaNacimiento=$('#fechaNacimiento').val();
+        rango = $('#customRange1').val();
 
     // validamos el campo nombre
     if(nombre=="" || nombre==null){
@@ -42,7 +44,24 @@ function validarFormulario(){
             mostraAlerta("Por favor ingrese un correo válido");
             return false;
         }
+         
     }
+
+    //validamos fecha
+    if(fechaNacimiento=="" || fechaNacimiento==null){
+
+        cambiarColor("fechaNacimiento");
+        // mostramos le mensaje de alerta
+        mostraAlerta("Campo obligatorio");
+        return false;
+    }
+
+//validamos genero
+    if(!$('input[name="genero"]').is(':checked')) {  
+        cambiarColor("generos");
+        mostraAlerta("Por favor seleccione el género");
+        return false;
+       } 
 
     // validamos el asunto
     if(asunto=="" || asunto==null){
@@ -113,7 +132,10 @@ function cambiarColor(dato){
 // funcion para mostrar la alerta
 
 function mostraAlerta(texto){
-    $('#nombre').before('<div class="alert">Error: '+ texto +'</div>');
+     $('#enviar').after('<div style="color: red" class="alert"><i class="fas fa-exclamation-triangle"></i> Error: '+ texto +'</div>');
+    //  output.innerHTML =
+    //     "<div style='color: red'><i class='fas fa-exclamation-triangle'></i> No se pudo calcular la distancia.</div>";
+    
 }
 
 function enviar(){

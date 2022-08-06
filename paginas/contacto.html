@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/x-icon" href="../images/FavIcon.svg">
+  <link rel="stylesheet" href="../styles/styleContacto.css">
 
   <!-- Bootstrap Style -->
 
@@ -29,13 +30,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/c2796234bc.js" crossorigin="anonymous"></script>
 </head>
 
 
 
 
-<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
@@ -52,10 +52,10 @@
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul id="menu-header-left" class="navbar-nav m-auto text-center">
           <li>
-            <a href="#" aria-current="page" class="nav-link font-weight-bold link fuenteO">Inicio</a>
+            <a href="../index.html" aria-current="page" class="nav-link font-weight-bold link fuenteO">Inicio</a>
           </li>
           <li>
-            <a href="./paginas/menu.html" class="nav-link font-weight-bold link fuenteO">Menú</a>
+            <a href="./menu.html" class="nav-link font-weight-bold link fuenteO">Menú</a>
           </li>
         </ul>
         <a href="#" class="custom-logo-link d-none d-lg-block " rel="home" aria-current="page"><img height="50px"
@@ -63,7 +63,7 @@
 
         <ul id="menu-header-right" class="navbar-nav m-auto text-center">
           <li>
-            <a href="./paginas/contacto.html" class="nav-link font-weight-bold link fuenteO">Contáctanos</a>
+            <a href="#" class="nav-link font-weight-bold link fuenteO">Contáctanos</a>
           </li>
           <li>
             <a href="#" class="nav-link font-weight-bold link fuenteO">Nosotros</a>
@@ -73,14 +73,14 @@
     </nav>
   </header>
  
-  <div class="container" style="background-color:black !important;">
+  <div class="container">
 
     <h1>Formulario Contacto</h1>
 
     <div class="contenido">
 
        
-      <form class="formulario">
+      <form class="formulario" id="formulario">
      
       
       
@@ -94,17 +94,19 @@
         <input type="range" class="form-range" id="customRange1" name="rango">
 
         <label for="genero" class="form-label">Género</label>
-        <div class="form-check">
+        <div class="generos">
+        <div class="form-check" id="genero">
           <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault1" value="Masculino">
           <label class="form-check-label" for="flexRadioDefault1">
             Masculino
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault2" checked value="Femenino">
+          <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault2" value="Femenino">
           <label class="form-check-label" for="flexRadioDefault2">
             Femenino
           </label>
+        </div>
         </div>
 
         <label for="">Estudios</label>
@@ -126,10 +128,11 @@
 
         <textarea name="mensaje" class="form-control mb-3" id="mensaje" placeholder="Mensaje" style="min-height: 150px;
         max-height: 200px"></textarea>
-        <button class="w-100 btn btn-outline-info" type="button" onclick="validarFormulario()" >Enviar</button>
+        <button class="w-100 btn btn-outline-info" type="button" onclick="validarFormulario()" id=enviar>Enviar</button>
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="http://127.0.0.1:5501/paginas/contacto.html">
     </form>
+    <div class="output"></div>
 
     </div>
 
