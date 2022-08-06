@@ -77,10 +77,11 @@ function validarFormulario(){
             return false;
         }
     }
-
+    enviar();
     $('form').submit();
     return true;
     
+
 } 
 
 $('input').focus(function(){
@@ -113,4 +114,45 @@ function cambiarColor(dato){
 
 function mostraAlerta(texto){
     $('#nombre').before('<div class="alert">Error: '+ texto +'</div>');
+}
+
+function enviar(){
+    var nombre = document.getElementsByName("nombre")[0].value;
+    var correo = document.getElementsByName("correo")[0].value;
+    var rango = document.getElementsByName("rango")[0].value;
+    var genero = document.getElementsByName("genero")[0].value;
+    // var bachillerato = document.getElementsByName("Bachillerato")[0].value;
+    // var diplomado = document.getElementsByName("Diplomado")[0].value;
+    // var  licenciatura= document.getElementsByName("Licenciatura")[0].value;
+    var asunto = document.getElementsByName("asunto")[0].value;
+    var mensaje = document.getElementsByName("mensaje")[0].value;
+    var dtpFechaNacimiento = document.getElementsByName("fechaNacimiento")[0].value;
+    fechaNacimiento = new Date(dtpFechaNacimiento);
+    var getFecha= new Date();
+     var edad = getFecha.getFullYear() - fechaNacimiento.getFullYear();
+     
+        // https://github.com/github/fetch
+fetch("https://formsubmit.co/ajax/ramirezrojasfabio@gmail.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        name: nombre,
+        email: correo,
+        date: fechaNacimiento,
+        age: edad,
+        range: rango,
+        genero: genero,
+        // bachillerato: bachillerato,
+        // licenciatura: licenciatura,
+        // diplomado: diplomado,
+        asunto:asunto,
+        mensaje:mensaje
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
 }

@@ -73,33 +73,62 @@
     </nav>
   </header>
  
-  <div class="container">
+  <div class="container" style="background-color:black !important;">
 
     <h1>Formulario Contacto</h1>
 
     <div class="contenido">
 
        
-      <form action="" method="GET" class="formulario">
+      <form class="formulario">
      
       
       
         <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre" id="nombre">
         
-        <input type="text" class="form-control mb-3" name="correo" placeholder="Correo electróico" id="correo">
+        <input type="email" class="form-control mb-3" name="correo" placeholder="Correo electrónico" id="correo">
 
         <input type="datetime-local" class="form-control mb-3" name="fechaNacimiento" placeholder="" id="fechaNacimiento">
 
-        <label for="customRange1" class="form-label">Example range</label>
-<input type="range" class="form-range" id="customRange1">
+        <label for="customRange1" class="form-label">Rango</label>
+        <input type="range" class="form-range" id="customRange1" name="rango">
+
+        <label for="genero" class="form-label">Género</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault1" value="Masculino">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Masculino
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault2" checked value="Femenino">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Femenino
+          </label>
+        </div>
+
+        <label for="">Estudios</label>
+        <br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Bachillerato" name="Bachillerato">
+          <label class="form-check-label" for="inlineCheckbox1">Bachillerato</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Diplomado" name="Diplomado">
+          <label class="form-check-label" for="inlineCheckbox2">Diplomado</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Licenciatura" name="Licenciatura">
+          <label class="form-check-label" for="inlineCheckbox3">Licenciatura</label>
+        </div>
 
         <input type="text" class="form-control mb-3" name="asunto" placeholder="Asunto" id="asunto">
 
         <textarea name="mensaje" class="form-control mb-3" id="mensaje" placeholder="Mensaje" style="min-height: 150px;
         max-height: 200px"></textarea>
         <button class="w-100 btn btn-outline-info" type="button" onclick="validarFormulario()" >Enviar</button>
-
-        
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/paginas/contacto.html">
     </form>
 
     </div>
@@ -212,6 +241,7 @@
     </script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="../Scripts/validar.js"></script>
+ 
   
 </body>
 
