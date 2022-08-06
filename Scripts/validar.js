@@ -1,9 +1,8 @@
-// creamos la funcion
+// // creamos la funcion
 function validarFormulario(){
     // removemos el div con la clase alert
+   
     $('.alert').remove();
-
-
     // declarion de variables
     var nombre=$('#nombre').val(),
         correo=$('#correo').val(),
@@ -97,11 +96,15 @@ function validarFormulario(){
         }
     }
     enviar();
-    $('form').submit();
-    return true;
+    //  $('form').submit();
+    alert("Correo envíado existosamente");
+    window.location.href = "../index.html";
+    
+     return true;
     
 
 } 
+
 
 $('input').focus(function(){
     $('.alert').remove();
