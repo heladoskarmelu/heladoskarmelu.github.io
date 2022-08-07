@@ -138,6 +138,16 @@ footer .bg-footer{
     background: url('./images/BGfooter.png') repeat-x bottom;
 }
 
+.container h1{
+    color: rgba(0, 0, 0, 0.7);
+}
+.container label{
+    color: rgba(0, 0, 0, 0.7);
+}
+.container output{
+    color: rgba(0, 0, 0, 0.7);
+}
+
 
 /* Fuentes */
 
