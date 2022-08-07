@@ -98,13 +98,26 @@ function validarFormulario(){
     enviar();
     //  $('form').submit();
     alert("Correo envíado existosamente");
-    
+    LimpiarCampos();
 
      return true;
     
 
 } 
 
+
+
+function LimpiarCampos(){
+    $('input[type="text"]').val('');
+    $('input[type="datetime-local"]').val('');
+    $('input[type="email"]').val('');
+    $('input[type="range"]').val('');
+    $('input[type="range"]').val('');
+    $('#mensaje').val('');
+    $('input[name="genero"]').prop('checked', false);
+    $('input[type=checkbox]').prop('checked',false);
+}
+ 
 
 $('input').focus(function(){
     $('.alert').remove();
