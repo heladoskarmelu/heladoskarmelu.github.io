@@ -4,7 +4,7 @@ textarea{
 }
 
 *{
-    color: black;
+   /* color: black; */ Poner solo a las letras necesarias
 }
 footer{
     color: #fff;
