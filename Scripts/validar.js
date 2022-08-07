@@ -98,8 +98,8 @@ function validarFormulario(){
     enviar();
     //  $('form').submit();
     alert("Correo envíado existosamente");
-    window.location.href = "../index.html";
     
+
      return true;
     
 
@@ -179,5 +179,7 @@ fetch("https://formsubmit.co/ajax/ramirezrojasfabio@gmail.com", {
 })
     .then(response => response.json())
     .then(data => console.log(data))
+    // .then(window.location.href = "../index.html")
     .catch(error => console.log(error));
+   
 }
