@@ -1,4 +1,5 @@
 var mapa;
+var marker;
 
 var geoLoc;
 var watchID;
@@ -6,12 +7,22 @@ var watchID;
 var directionsDisplay;
 var directionsService;
 
+var LatLng;
+
 //Función que enciende el mapa
 function initMap() { 
-  var LatLng = {lat: 9.9763021, lng: -84.3799529}; //Objeto Coordenadas de la UTN
+  LatLng = {lat: 9.978647495621113, lng: -84.37930856790187}; //Objeto Coordenadas de la Cateferia
 
   //Creamos el mapa que recibe del HTML y un objeto con el zoom y coordenadas
   mapa = new google.maps.Map( document.getElementById("map"), {center: LatLng, zoom: 17} );
+
+  //Creamos un marcador en el mapa
+  marker = new google.maps.Marker({
+    position: LatLng,
+    map: mapa,
+    title: "La Cafetería",
+    icon: "../images/markerMap.png"
+  });
 
   directionsDisplay = new google.maps.DirectionsRenderer();
   directionsService = new google.maps.DirectionsService();
@@ -37,7 +48,7 @@ function botonCalcularRuta() {
 function calcRoute(position) {
   var request = {
     origin: {lat: position.coords.latitude, lng: position.coords.longitude},
-    destination: {lat: 9.9763021, lng: -84.3799529},
+    destination: {lat: 9.978647495621113, lng: -84.37930856790187},
     travelMode: google.maps.TravelMode.DRIVING, //WALKING, BYCYCLING, TRANSIT
     unitSystem: google.maps.UnitSystem.METRIC
   }
