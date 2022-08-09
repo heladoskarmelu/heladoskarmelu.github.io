@@ -1,5 +1,5 @@
 * {
-    color: #fff;
+    /* color: #fff; */
 }
 
 body {
@@ -164,6 +164,14 @@ footer .bg-footer{
     color: black;
 }
 
+.btnCategorias {
+    /* background: #01adf3 !important;
+    color: #FFF200 !important; */
+    background: #01adf3 !important;
+    color: #b5eaff !important;
+
+    
+}
 
 
 

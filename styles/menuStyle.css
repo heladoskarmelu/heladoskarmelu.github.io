@@ -208,9 +208,15 @@ body{
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #444; /* Black*/
+
+
+  /* background-color: rgb(255, 0, 0); Black */
+  background-color: #008fc9;
+  background-image: url(../images/Ice\ Cream\ Pattern.svg);
+
+
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 400px; /* Place content 60px from the top */
+  padding-top: 250px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
@@ -218,8 +224,8 @@ body{
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #fff;
+  font-size: 35px;
+  color: #b5eaff;
   display: block;
   transition: 0.3s;
 }
