@@ -1,113 +1,113 @@
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
-  
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+
 }
 
 
 .box {
-  margin: 0.5rem;
-  border-radius: 3px;
-  background: #fff;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
-  transition: transform 0.2s;
+margin: 0.5rem;
+border-radius: 3px;
+background: #fff;
+box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+transition: transform 0.2s;
 }
 .box :hover {
-  transform: scale(1.1);
+transform: scale(1.1);
 }
 .box a {
-  text-decoration: none;
+text-decoration: none;
 }
 .box-img {
-  display: block;
-  margin: 20px auto;
+display: block;
+margin: 20px auto;
 
-  width: 50%;
+width: 80%;
 }
 
 .box-text {
-  text-align: center;
-  color: #08c;
-  border-top: 1px solid #eee;
-  font-weight: bold;
-  padding: 0.7rem 0;
+text-align: center;
+color: #08c;
+border-top: 1px solid #eee;
+font-weight: bold;
+padding: 0.7rem 0;
 }
 
 
 /* side bar */
 .sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
+height: 100%; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0;
+left: 0;
 
 
-  /* background-color: rgb(255, 0, 0); Black */
-  background-color: #008fc9;
-  background-image: url(../images/Ice\ Cream\ Pattern.svg);
+/* background-color: rgb(255, 0, 0); Black */
+background-color: #008fc9;
+background-image: url(../images/Ice\ Cream\ Pattern.svg);
 
 
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 250px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 250px; /* Place content 60px from the top */
+transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
 /* The sidebar links */
 .sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 35px;
-  color: #b5eaff;
-  display: block;
-  transition: 0.3s;
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 35px;
+color: #b5eaff;
+display: block;
+transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
+color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
 }
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+font-size: 20px;
+cursor: pointer;
+background-color: #111;
+color: white;
+padding: 10px 15px;
+border: none;
 }
 
 .openbtn:hover {
-  background-color: #444;
+background-color: #444;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+transition: margin-left .5s; /* If you want a transition effect */
+padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  #{padding-top: 15px;
+#{padding-top: 15px;
 
-    /* position: relative;
-    height: 25%;
-    width: 100%; */
-  }
-  .sidebar a {font-size: 18px;}
+  /* position: relative;
+  height: 25%;
+  width: 100%; */
+}
+.sidebar a {font-size: 18px;}
 
 }
