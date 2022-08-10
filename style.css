@@ -197,3 +197,17 @@ footer .bg-footer{
     border-radius: 10px;
     border: 03px solid #fff;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url(./images/parallax.jpg);
+  
+    /* Full height */
+    height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
