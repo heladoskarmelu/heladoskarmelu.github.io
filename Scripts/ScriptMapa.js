@@ -69,5 +69,5 @@ function calcRoute(position) {
 }
 
 function errorHandler(err) {
-  alert("Se despichó tere");
+  alert("Ocurrió un error: " + err.code);
 }
