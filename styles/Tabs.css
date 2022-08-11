@@ -1,6 +1,7 @@
 .tabs {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .tabs label {
@@ -9,13 +10,22 @@
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #171d23;
+  background: #e1e4eb; /* Tab sin seleccionar */
   font-weight: bold;
   transition: background ease 0.2s;
 }
 
-/*  1d252c */
-/*  171d23 */
+.containertabs {
+  font-family: 'Fira Code', monospace;
+  background-color: #dddddd; /* Fondo div */
+  
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+}
+
+.containertabs img {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+}
+
 
 .tabs .tab {
   order: 99;
@@ -23,7 +33,7 @@
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #1d252c;
+  background: #ebeef5; /* contenido */
 }
 
 .tabs input[type=radio] {
@@ -31,16 +41,28 @@
 }
 
 .tabs input[type=radio]:checked + label {
-  background: #1d252c;
+  background: #ebeef5; /* Tab seleccionada */
+  
 }
 
 .tabs input[type=radio]:checked + label + .tab {
   display: block;
 }
 
+.JSONLetra1 {
+  color: #5570db ;
+  font-weight: bold;
+}
+
+.JSONLetra2 {
+  color: #d81452 ;
+}
+
+
+
 @media (max-width: 45em) {
   .tabs .tab,
-.tabs label {
+  .tabs label {
     order: initial;
   }
 
@@ -50,3 +72,4 @@
     margin-top: 0.2rem;
   }
 }
+
