@@ -2,6 +2,10 @@
     color: #fff;
 }
 
+body, html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
@@ -201,13 +205,20 @@ footer .bg-footer{
 .parallax {
     /* The image used */
     background-image: url(./images/parallax.jpg);
-  
     /* Full height */
-    height: 500px; 
-  
+    height: 70%; 
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        /* background-attachment: scroll; */
+        display: none;
+    }
+}
+
