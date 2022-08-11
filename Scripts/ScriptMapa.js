@@ -69,5 +69,9 @@ function calcRoute(position) {
 }
 
 function errorHandler(err) {
-  alert("Ocurrió un error: " + err.code);
+  if (err.code == 1) {
+    alert("Acceso a localización denegado.");
+  } else if (err.code == 2) {
+    alert("Posición no disponible.");
+  }
 }
