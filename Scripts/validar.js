@@ -181,7 +181,7 @@ function enviar() {
             Email: correo,
             Nacimiento: fechaNacimiento,
             Edad: edad,
-            Ingresos: rango,
+            Calificacion: rango,
             Genero: genero,
             // bachillerato: bachillerato,
             // licenciatura: licenciatura,

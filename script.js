@@ -12,3 +12,15 @@ function filtroMenu(c) {
         }
     }
 }
+
+function openGaleria() {
+    window.location.href = "./paginas/galeria.html";
+}
+
+function openSpots() {
+    window.location.href = "./paginas/ubicaciones.html";
+}
+
+function openNosotros() {
+    window.location.href = "./paginas/Nosotros.html";
+}
